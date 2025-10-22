@@ -9,17 +9,7 @@ import { Textarea } from "@/components/ui/textarea";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { createClient } from "../../../supabase/client";
 import { useToast } from "@/components/ui/use-toast";
-
-interface Sale {
-  id: string;
-  amount: number;
-  date: string;
-  description: string;
-  category: string;
-  customer_name: string;
-  customer_email: string;
-  customer_phone: string;
-}
+import { Sale } from "@/types/business";
 
 interface EditSaleDialogProps {
   sale: Sale;

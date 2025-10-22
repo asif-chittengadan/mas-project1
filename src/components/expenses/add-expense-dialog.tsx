@@ -10,6 +10,7 @@ import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@
 import { Plus } from "lucide-react";
 import { createClient } from "../../../supabase/client";
 import { useToast } from "@/components/ui/use-toast";
+import { Expense } from "@/types/business";
 
 interface AddExpenseDialogProps {
   onExpenseAdded: () => void;

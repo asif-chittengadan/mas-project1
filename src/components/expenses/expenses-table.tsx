@@ -10,6 +10,7 @@ import AddExpenseDialog from "./add-expense-dialog";
 import EditExpenseDialog from "./edit-expense-dialog";
 import { createClient } from "../../../supabase/client";
 import { useToast } from "@/components/ui/use-toast";
+import { Expense } from "@/types/business";
 import {
   AlertDialog,
   AlertDialogAction,
@@ -20,15 +21,6 @@ import {
   AlertDialogHeader,
   AlertDialogTitle,
 } from "@/components/ui/alert-dialog";
-
-interface Expense {
-  id: string;
-  amount: number;
-  date: string;
-  description: string;
-  category: string;
-  vendor: string;
-}
 
 interface ExpensesTableProps {
   initialExpenses: Expense[];

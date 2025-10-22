@@ -10,6 +10,7 @@ import AddSaleDialog from "./add-sale-dialog";
 import EditSaleDialog from "./edit-sale-dialog";
 import { createClient } from "../../../supabase/client";
 import { useToast } from "@/components/ui/use-toast";
+import { Sale } from "@/types/business";
 import {
   AlertDialog,
   AlertDialogAction,
@@ -20,17 +21,6 @@ import {
   AlertDialogHeader,
   AlertDialogTitle,
 } from "@/components/ui/alert-dialog";
-
-interface Sale {
-  id: string;
-  amount: number;
-  date: string;
-  description: string;
-  category: string;
-  customer_name: string;
-  customer_email: string;
-  customer_phone: string;
-}
 
 interface SalesTableProps {
   initialSales: Sale[];

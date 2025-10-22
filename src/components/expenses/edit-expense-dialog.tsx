@@ -9,15 +9,7 @@ import { Textarea } from "@/components/ui/textarea";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { createClient } from "../../../supabase/client";
 import { useToast } from "@/components/ui/use-toast";
-
-interface Expense {
-  id: string;
-  amount: number;
-  date: string;
-  description: string;
-  category: string;
-  vendor: string;
-}
+import { Expense } from "@/types/business";
 
 interface EditExpenseDialogProps {
   expense: Expense;

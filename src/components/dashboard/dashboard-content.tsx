@@ -8,24 +8,7 @@ import ExpenseChart from "./expense-chart";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import SalesTable from "../sales/sales-table";
 import ExpensesTable from "../expenses/expenses-table";
-
-interface Sale {
-  id: string;
-  amount: number;
-  date: string;
-  description: string;
-  category: string;
-  customer_name: string;
-}
-
-interface Expense {
-  id: string;
-  amount: number;
-  date: string;
-  description: string;
-  category: string;
-  vendor: string;
-}
+import { Sale, Expense } from "@/types/business";
 
 interface DashboardContentProps {
   initialSales: Sale[];
